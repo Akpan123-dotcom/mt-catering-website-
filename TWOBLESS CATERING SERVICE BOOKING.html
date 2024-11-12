@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Service Booking - Akwa Ibom State, Nigeria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            text-align: center;
+            color: #555;
+        }
+        label {
+            font-size: 16px;
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .note {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .footer {
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Akwa Ibom Catering Service Booking</h1>
+        <p>We specialize in delicious Nigerian dishes from Akwa Ibom State. We can also cater to other states across Nigeria. Book your event at least 2-3 weeks in advance for the best service!</p>
+        
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="date">Preferred Event Date</label>
+            <input type="date" id="date" name="date" required min="2024-11-26">
+
+            <label for="menu">Select Your Menu</label>
+            <select id="menu" name="menu" required>
+                <option value="standard">Standard Menu</option>
+                <option value="vegetarian">Vegetarian Menu</option>
+                <option value="custom">Custom Menu</option>
+            </select>
+
+            <label for="message">Additional Requests</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requests or instructions?"></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <p class="note">
+            Note: We recommend booking at least 2-3 weeks in advance to ensure availability.
+        </p>
+
+        <div class="footer">
+            <p>For bookings and inquiries, feel free to contact us. Serving Akwa Ibom and other states in Nigeria.</p>
+        </div>
+    </div>
+
+</body>
+</html>
