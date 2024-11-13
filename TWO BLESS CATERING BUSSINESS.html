@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Bless Catering - Managed by Blessing Emmanuel Akpan</title>
+    <style>
+        /* Set background image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://pictures-nigeria.jijistatic.net/117389837_NjIwLTcyOC1jYmI5NWViN2I1LTE.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .intro-section {
+            text-align: center;
+            background-color: rgba(255, 99, 71, 0.8);
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .form-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+        }
+
+        input[type="text"], input[type="tel"], input[type="date"], input[type="time"], textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #FF6347;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #FF4500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        footer p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>Two Bless Catering</h1>
+            <p>Managed by Blessing Emmanuel Akpan</p>
+            <p>Serving Akwa Ibom State and Beyond!</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <h2>Welcome to Two Bless Catering</h2>
+        <p>We provide exceptional catering services in Akwa Ibom State and can travel to other states to make your event special. Let us make your event unforgettable with our delicious dishes!</p>
+    </section>
+
+    <!-- Event Request Form Section -->
+    <section class="form-section">
+        <h2>Submit Your Event Details</h2>
+        <p>Please fill out the form below with your event details. Kindly submit your request at least one month and one week before your event for proper preparation.</p>
+
+        <form action="submit_form.php" method="POST" id="cateringForm">
+            <div class="form-group">
+                <label for="name">Your Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 810 000 0000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Event Address:</label>
+                <input type="text" id="address" name="address" placeholder="123 Main St, Lagos" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dishes">Dishes to be Served (Optional):</label>
+                <textarea id="dishes" name="dishes" rows="4" placeholder="List the dishes you want us to serve (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="event_type">Event Type:</label>
+                <input type="text" id="event_type" name="event_type" placeholder="Wedding, Party, Corporate Event" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event_date">Event Date:</label>
+                <input type="date" id="event_date" name="event_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event_time">Event Time:</label>
+                <input type="time" id="event_time" name="event_time" required>
+            </div>
+
+            <div class="form-group">
+                <p><strong>Important:</strong> Please make sure to arrange these details at least 1 month and 1 week before your event for proper preparation.</p>
+            </div>
+
+            <button type="submit">Submit Event Details</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Two Bless Catering. All Rights Reserved. Serving Akwa Ibom State and Beyond.</p>
+    </footer>
+</body>
+</html>
